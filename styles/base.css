@@ -10,6 +10,11 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
 header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -20,6 +25,7 @@ header span {
     font-size: x-large;
     text-align: center;
     padding: 10px;
+    font-weight: 800;
 }
 
 nav li {
@@ -32,11 +38,13 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
+ul a:hover {
     text-decoration: overline;
+    color: antiquewhite;
+    border-bottom-width: 2px;
 }
 
-nav {
+ul {
     display: flex;
     justify-content: space-around;
 }
@@ -82,11 +90,7 @@ h3 {
     border-radius: 10px;
     padding: 10px;
     margin: 20px;
-    grid-template-columns: 1fr 1fr
-}
-
-.card a {
-    
+    grid-template-columns: 1fr 1fr;
 }
 
 footer {
