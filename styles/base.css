@@ -2,6 +2,7 @@
     --primary-color: rgb(19, 75, 126);
     --secondary-color: white;
     --accent-color: black;
+    --link-color: lightgoldenrodyellow;
 }
 
 * {
@@ -31,6 +32,7 @@ header span {
 nav li {
     list-style-type: none;
     padding: 10px;
+    display: none;
 }
 
 nav a {
@@ -40,8 +42,7 @@ nav a {
 
 ul a:hover {
     text-decoration: overline;
-    color: antiquewhite;
-    border-bottom-width: 2px;
+    color: var(--link-color);
 }
 
 ul {
@@ -99,4 +100,31 @@ footer {
     text-align: center;
     width: 100%;
     padding: 10px;
+}
+
+#menu {
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    font-size:2rem;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+#menu:hover {
+    color:var(--link-color);
+}
+
+.show li {
+    display: block;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.show::before {
+    content: "✖";
 }
