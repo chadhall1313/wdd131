@@ -1,0 +1,38 @@
+@media screen and (max-width: 500px){
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    #menu {
+        position: absolute;
+        left: 1rem;
+        top: 0;
+        background-color: var(--main-color);
+        color: var(--secondary-color);
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .show {
+        display: block;
+    }
+
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.show::before {
+        content: "✖";
+    }
+
+    nav a:hover #menu:hover{
+        text-decoration: overline;
+        color: var(--link-color);
+
+    } 
+}

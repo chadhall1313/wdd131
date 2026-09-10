@@ -1,0 +1,74 @@
+:root {
+    --main-color: rgb(157, 6, 157);
+    --secondary-color: white;
+    --accent-color: black;
+    --link-color: lightgoldenrodyellow;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+img {
+    max-width: 15rem;
+}
+
+header span {
+    display: block;
+    font-size: x-large;
+    text-align: center;
+    padding: 10px;
+    font-weight: 800;
+}
+
+header, footer {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding: 1rem;
+}
+
+nav a:hover {
+    text-decoration: overline;
+    color: var(--link-color);
+}
+
+h1 {
+    padding: 20px;
+    width: 100%;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1rem;
+}
+
+figcaption {
+    font-weight: 300;
+}
