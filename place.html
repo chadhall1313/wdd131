@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acadia National Park - Chad Hall</title>
+    <meta name="description"
+        content="Information about Acadia National Park located in Maine US.">
+    <meta name="author" content="Chad Hall">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Acadia National Park</h1>
+    </header>
+    <main>
+
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/acadia-hero-large.webp">
+                <source media="(min-width: 500px)" srcset="images/acadia-hero-medium.webp">
+                <img src="images/acadia-hero-small.webp" alt="hero image of overview of Acadia">
+            </picture>
+            
+            <section>
+                <div class="data">
+                    <h2>Data</h2>
+                    <h3>Area:</h3>
+                    <p>49,075 acres</p>
+                    <h3>Elevation:</h3>
+                    <p>0 feet - 1,530 feet</p>
+                    <h3>Time Zone:</h3>
+                    <p>EST, UTC-5</p>
+                    <h3>Phone:</h3>
+                    <p>(207) 288-3338</p>
+                </div>
+
+                <div class="weather">
+                    <h2>Weather</h2>
+                    <span></span>
+                    <h3>Temperature:</h3>
+                    <p class="temperature">40°F</p>
+                    <h3>Conditions:</h3>
+                    <p>Sunny</p>
+                    <h3>Wind:</h3>
+                    <p class="windSpeed">11mph</p>
+                    <h3>Wind Chill:</h3>
+                    <p id="chill"></p>
+                </div>
+            </section>
+        </div>
+
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Chad Hall - Idaho</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

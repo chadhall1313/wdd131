@@ -1,0 +1,88 @@
+:root {
+    --primary-color: rgb(0, 97, 0);
+    --secondary-color: white;
+    --background-color: rgb(225, 215, 215);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-weight: 800;
+    background-color: var(--primary-color);
+    color:  var(--secondary-color);
+    padding: 1rem;
+}
+
+h2 {
+    font-weight: 600;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    grid-column: span 2;
+    position: relative;
+    right: 1.5rem;
+    border-radius: 10px;
+}
+
+h3 {
+    font-weight: 500;
+    margin: .5rem;
+}
+
+p {
+    font-weight: 300;
+    margin: .5rem;
+}
+
+.weather span {
+    grid-column: span 2;
+}
+
+.data, .weather {
+    background-color: var(--background-color);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    opacity: 0.8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+}
+
+.data {
+    top: 20%;
+    left: 5%;
+}
+
+.weather {
+    bottom: 0%;
+    right: 5%;
+}
+
+.weather h2::after {
+    content: " 🌤️";
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero {
+    position: relative;
+}

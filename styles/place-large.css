@@ -1,0 +1,28 @@
+@media screen and (max-width: 700px) {
+    .data, .weather {
+        position: static;
+        grid-template-columns: 1fr;
+    }
+
+.weather h2::after {
+    content: none;
+}
+
+.weather span {
+    display: block;
+    text-align: center;
+    padding: 2rem;
+}
+
+.weather span::after {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/cloud-sun-fill.svg");
+    background-size: contain;
+        
+    }
+
+
+}
