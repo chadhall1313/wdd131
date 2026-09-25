@@ -1,0 +1,24 @@
+h1 {
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    display: block;
+    background-color: black;
+    animation: fade 10s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
