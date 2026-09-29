@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(19, 75, 126);
+    --secondary-color: white;
+    --other-color: black;
+    --accent-color: rgb(253, 229, 92);
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+}
+
+h1:hover {
+    color: var(--accent-color);
+}
+
+section {
+    border: solid 1px var(--other-color);
+    padding: 1rem;
+    margin: 1rem;
+
+}
+
+img {
+    max-width: 200px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+h2 {
+    grid-column: span 2;
+}
+
+.wireframes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
