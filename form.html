@@ -8,6 +8,7 @@
         content="A form to review products from a predetermined list to practice the principles learned this week.">
     <meta name="author" content="Chad Hall">
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -28,27 +29,27 @@
                         <option value="" selected disabled>Select a Product ...</option>
                 </select>
                 </div>
-                <label for="overall-rating">Overall Rating*</label>
+                <label>Overall Rating*</label>
                 <div class="rating">
                     <div>
                         <label for="1rating">☆</label>
-                        <input type="radio" id="1rating" name="overall-rating" required>
+                        <input type="radio" id="1rating" name="overall-rating" value="1" required>
                     </div>
                     <div>
                         <label for="2rating">☆☆</label>
-                        <input type="radio" id="2rating" name="overall-rating" required>
+                        <input type="radio" id="2rating" name="overall-rating" value="2" required>
                     </div>
                     <div>
                         <label for="3rating">☆☆☆</label>
-                        <input type="radio" id="3rating" name="overall-rating" required>
+                        <input type="radio" id="3rating" name="overall-rating" value="3" required>
                     </div>
                     <div>
                         <label for="4rating">☆☆☆☆</label>
-                        <input type="radio" id="4rating" name="overall-rating" required>
+                        <input type="radio" id="4rating" name="overall-rating" value="4" required>
                     </div>
                     <div>
                         <label for="5rating">☆☆☆☆☆</label>
-                        <input type="radio" id="5rating" name="overall-rating" required>
+                        <input type="radio" id="5rating" name="overall-rating" value="5" required>
                     </div>
                 </div>
                     <label for="install-date">Date of Installation*</label>
