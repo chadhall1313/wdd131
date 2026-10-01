@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - Chad Hall</title>
+    <meta name="description"
+        content="A form to review products from a predetermined list to practice the principles learned this week.">
+    <meta name="author" content="Chad Hall">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <fieldset>
+                <legend>Review our Product!</legend>
+                <label for="product-name">Product Name*</label>
+                <div>
+                    <select id="product-name" name="product-name" required>
+                        <option value="" selected disabled>Select a Product ...</option>
+                </select>
+                </div>
+                <label for="overall-rating">Overall Rating*</label>
+                <div class="rating">
+                    <div>
+                        <label for="1rating">☆</label>
+                        <input type="radio" id="1rating" name="overall-rating" required>
+                    </div>
+                    <div>
+                        <label for="2rating">☆☆</label>
+                        <input type="radio" id="2rating" name="overall-rating" required>
+                    </div>
+                    <div>
+                        <label for="3rating">☆☆☆</label>
+                        <input type="radio" id="3rating" name="overall-rating" required>
+                    </div>
+                    <div>
+                        <label for="4rating">☆☆☆☆</label>
+                        <input type="radio" id="4rating" name="overall-rating" required>
+                    </div>
+                    <div>
+                        <label for="5rating">☆☆☆☆☆</label>
+                        <input type="radio" id="5rating" name="overall-rating" required>
+                    </div>
+                </div>
+                    <label for="install-date">Date of Installation*</label>
+                <div>
+                    <input type="date" id="install-date" name="install-date" required>
+                </div>
+                <label>Which features did you find useful in the product? (Check all that apply)</label> 
+                <div class="useful">
+                    <div>
+                        <input type="checkbox" id="durability" name="durability" value="durability">
+                        <label for="durability">Durability</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="ease" name="ease" value="ease">
+                        <label for="ease">Ease of Use</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="performance" name="performance" value="performance">
+                        <label for="performance">Performance</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="design" name="design" value="design">
+                        <label for="design">Design</label>
+                    </div>
+                </div>
+                <label for="written-review">Written Review (optional)</label>
+                <div>
+                    <textarea id="written-review" name="written-review"></textarea>
+                </div>
+                <label for="your-name">Your Name (optional)</label>
+                <div>
+                    <input type="text" id="your-name" name="your-name">
+                </div>
+                <input type="submit" value="Post Review">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Chad Hall - Idaho</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

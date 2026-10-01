@@ -1,0 +1,68 @@
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    }
+
+form {
+    max-width: 30%;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+select, input[type="date"], input[type="text"] {
+    height: 2rem;
+    width: 100%;
+}
+
+textarea {
+    height: 5rem;
+    width: 100%;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.rating div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.useful {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: aliceblue;
+}
+
+div {
+    padding: 1rem;
+}
+
+label {
+    font-weight: 300;
+}
+
+legend {
+    font-weight: 800;
+}
+
+input[type="submit"] {
+    background-color: blue;
+    color: white;
+    padding: 1rem;
+    font-weight: 700;
+    font-size: larger;
+}
