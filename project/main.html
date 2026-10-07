@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/project-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="icon" href="images/logo-small.svg">
     <script src="scripts/project-main.js" defer></script>
@@ -21,17 +21,16 @@
         <h1>Celestial Scripture</h1>
             <nav>
                 <ul class="navigation">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="insights.html">Insights</a></li>
                     <li><a href="https://www.churchofjesuschrist.org/study/scriptures?lang=eng" target="_blank">Scriptures</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">Insights</a></li>
                 </ul>
             </nav>
-        </div>
     </header>
     <main>
         <section class="hero">
-            <img src="images/jesus-bench.webp" alt="picture of Jesus Christ" loading="lazy">
+            <img src="images/jesus-bench.webp" alt="picture of Jesus Christ">
             <div class="verseOfTheDay">
 
                 <h3>Verse of the Day:</h3>
@@ -40,14 +39,30 @@
                 <p><a id="link" href="" target="_blank">Study this Scripture!</a></p>
             </div>
         </section>
-        <section>
-            <h2>Discover more in the scriptures!</h2>
-            <p>At Celestial Scripture our job is to provide you the resources to deepen your study of the scriptures.</p>
+        <section class="quotes">
+            <div>
+                <img src="images/oaks.webp" alt="portrait of Dallin H. Oaks" loading="lazy">
+                <p><strong>Dallin H. Oaks said:</strong> We are given the scriptures to direct our lives. As the prophet Nephi taught us, we should “feast upon the words of
+                Christ; for behold, the words of Christ will tell you all things what ye should do.”</p>
+            </div>
+            <div class="middle">
+                <h2>Scriptures have power!</h2>
+                <img src="images/book-of-mormon.webp" alt="the Book of Mormon" loading="lazy">
+                <a class="button" href="resources.html">Learn more</a>
+                <a class="button" href="insights.html">Share Insights</a>
+            </div>
+            <div>
+                <img src="images/cook.webp" alt="portrait of Quintin L. Cook" loading="lazy">
+                <p><strong>Elder Quintin L. Cook said:</strong> the Holy Bible and the Book of Mormon: Another Testament of Jesus Christ provide spiritual guidance and teaching from
+                Jesus Christ, the Savior of the world. We treasure these books for their profound role in documenting God's direction to
+                ancient prophets and people and the guidance they provide for our own personal lives.</p>
+            </div>
         </section>
     </main>
     <footer>
         <p>&copy; <span id="currentyear"></span> Chad Hall - Idaho</p>
         <p id="lastModified"></p>
+        <p><a href="reference-page.html">Reference Page</a></p>
     </footer>
 </body>
 </html>

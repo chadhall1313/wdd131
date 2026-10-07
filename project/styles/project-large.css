@@ -2,4 +2,23 @@
     .verseOfTheDay {
         position: relative;
     }
+
+    .quotes {
+        grid-template-columns: 1fr;
+    }
+    .middle {
+        display: block;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .middle h2 {
+        margin-bottom: 1rem;
+    }
+
+    .middle .button {
+        display: block;
+        width: 80%;
+        margin: 1rem auto;
+    }
 }
