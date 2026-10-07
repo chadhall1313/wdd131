@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(19, 75, 126);
+    --secondary-color: white;
+    --background-color: #EEE5D5;
+    --other-color: black;
+    --link-color: rgb(253, 229, 92);
+    --extra-color: rgb(255, 166, 0);
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    padding: 1rem;
+}
+
+nav li {
+    border-top: 1px solid white;
+    list-style-type: none;
+    padding: 15px;
+}
+
+nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+li:hover {
+    text-decoration: overline;
+    color: var(--other-color);
+    background-color: var(--link-color);
+    border-radius: 100px 100px 0 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.verseOfTheDay {
+    position: absolute;
+    top: 10%;
+    margin: 2rem;
+    background-color: var(--extra-color);
+    border-radius: 10px 10px 10px 10px;
+    padding: 1.5rem;
+    border: 1px solid var(--primary-color);
+}
+
+#verse, h3 {
+    padding: 1rem;
+}
+
+#link {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 10px;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+#link:hover {
+    box-shadow: 1px 1px 5px 5px;
+    text-decoration: underline;
+}
