@@ -21,4 +21,8 @@
         width: 80%;
         margin: 1rem auto;
     }
+
+    .insights {
+        grid-template-columns: 1fr;
+    }
 }

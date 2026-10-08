@@ -125,6 +125,8 @@ li:hover {
     max-height: fit-content;
     border-radius: 1rem;
     display: block;
+    margin: 1rem;
+    text-align: center;
     }
 
 .button:hover {
@@ -134,5 +136,51 @@ li:hover {
 
 img {
     max-width: 100%;
+    width: 100%;
     margin: 0 auto;
+}
+
+.insights {
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+}
+
+.insights div {
+    padding: 1.5rem;
+    margin: 1rem;
+    border: 2px inset var(--primary-color);
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+}
+
+.form span {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+label {
+    margin-bottom: .5rem;
+    font-weight: 700;
+}
+
+input, textarea {
+    width: 100%;
+    padding: .5rem;
+}
+
+textarea {
+    resize: none;
+    height: 200px;
+}
+
+.form .button {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.comment {
+    border: 1px solid black;
+    margin: 1rem;
+    padding: .5rem;
 }
